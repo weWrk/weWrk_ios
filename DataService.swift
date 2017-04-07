@@ -25,14 +25,13 @@ class DataService {
     var storageRef: FIRStorageReference {
         return FIRStorage.storage().reference()
     }
-    
+
     let job = Job()
     let user = Users()
     var fileUrl: String!
     var postFileUrl: String!
     var jobDate: String!
    
-    
     func SignUp(username: String, email: String, password: String, data: Data) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
             if let error = error {
@@ -61,10 +60,7 @@ class DataService {
                     } else {
                         let newUser = FIRDatabase.database().reference().child("users").child((user?.uid)!) 
                         newUser.setValue(["displayName" : "\(username)", "email" : "\(email)", "id": "\(user!.uid)",
-                            "profileURL": "\(self.fileUrl!)"])
-                       
-                        
-                                               
+                            "profileURL": "\(self.fileUrl!)"])                       
 
                     }
                 })
@@ -136,5 +132,4 @@ class DataService {
     }
 
 }
-
 
