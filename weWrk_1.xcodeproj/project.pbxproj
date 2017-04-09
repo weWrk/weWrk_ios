@@ -36,6 +36,9 @@
 		DEE089DB1E7B7B5E0007814F /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE089DA1E7B7B5E0007814F /* constants.swift */; };
 		DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE089DC1E7B88870007814F /* feedViewController.swift */; };
 		F35B946F241DE92E9E794B9D /* Pods_weWrk_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044BB32CB00BC46475A25ED0 /* Pods_weWrk_1.framework */; };
+		FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */; };
+		FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */; };
+		FE9868161E99C5F800DB0C84 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868151E99C5F800DB0C84 /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		DEE089D91E7B6A960007814F /* weWrk_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = weWrk_1.entitlements; sourceTree = "<group>"; };
 		DEE089DA1E7B7B5E0007814F /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		DEE089DC1E7B88870007814F /* feedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
+		FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstJobPostVC.swift; sourceTree = "<group>"; };
+		FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondJobPostViewController.swift; sourceTree = "<group>"; };
+		FE9868151E99C5F800DB0C84 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 		DE1B53111E790EF9000F01BA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FE9868121E99AB5D00DB0C84 /* Job */,
 				DE590A781E92DB7D0096A623 /* Map */,
 				DE2D32C51E8D628B00DB2EFB /* Messenger */,
 				DE2D32C41E8D627000DB2EFB /* Login/SignUp */,
@@ -175,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1C626C1E824DA700FFC6A9 /* DataService.swift */,
+				FE9868151E99C5F800DB0C84 /* Job.swift */,
 				DE2D32C21E8CCAF500DB2EFB /* Users.swift */,
 				DE590A721E90780D0096A623 /* connectionStatus.swift */,
 				DE590A741E918A9D0096A623 /* Message.swift */,
@@ -247,6 +255,15 @@
 				DE590A791E92DBAB0096A623 /* MapViewController.swift */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		FE9868121E99AB5D00DB0C84 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */,
+				FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */,
+			);
+			name = Job;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,10 +401,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1B53101E790EDC000F01BA /* LoginViewController.swift in Sources */,
+				FE9868161E99C5F800DB0C84 /* Job.swift in Sources */,
 				33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */,
 				DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */,
 				DE590A7A1E92DBAB0096A623 /* MapViewController.swift in Sources */,
+				FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */,
 				DE590A751E918A9D0096A623 /* Message.swift in Sources */,
+				FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */,
 				DE2D32C11E8C3C0600DB2EFB /* ComposeMessageTableViewCell.swift in Sources */,
 				DE2D32BE1E8C39D700DB2EFB /* ComposeMessageViewController.swift in Sources */,
 				DE1C626D1E824DA700FFC6A9 /* DataService.swift in Sources */,
