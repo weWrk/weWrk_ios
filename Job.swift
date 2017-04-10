@@ -13,5 +13,9 @@ class Job: NSObject {
     var title: String?
     var company: String?
     var location: String?
+    var function: String?
+    var jobDescription: String?
+    var photoURL: String?
+    
     
 }
