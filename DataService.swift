@@ -26,7 +26,9 @@ class DataService {
         return FIRStorage.storage().reference()
     }
     
+    
     var fileUrl: String!
+    var postFileUrl: String!
     
     func SignUp(username: String, email: String, password: String, data: Data) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -74,5 +76,46 @@ class DataService {
             
          })
     }
+
+    func getData(title: String, company: String, location: String, data: Data, function: String, jobDescription: String)
+    {
+        // create reference to the database
+        let Post = FIRDatabase.database().reference().child("jobPost").child((currentUser?.uid)!)
+        // keep track of user posts with autoId
+        let NewPost = Post.childByAutoId()
+        
+        // get data and turn it into a string
+        let filePath = "jobPostImage/\(currentUser?.uid)"
+        let metadata = FIRStorageMetadata()
+        metadata.contentType = "image/jpeg"
+        
+        
+        
+        self.storageRef.child(filePath).put(data, metadata: metadata, completion: { (metadata, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            //let seg = LoginViewController()
+            self.postFileUrl = metadata!.downloadURLs![0].absoluteString
+            
+
+        
+        
+        
+        NewPost.setValue(["title" : "\(title)",
+                                  "company" : "\(company)",
+                                  "location": "\(location)",
+                                  "function": "\(function)",
+                                  "jobDescription" : "\(jobDescription)",
+                                  "photoURL": "\(self.postFileUrl!)"
+                                  ])
+        
+        
+        })
+        
+    }
+        
+    
 }
 

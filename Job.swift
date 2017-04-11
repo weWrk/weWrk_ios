@@ -17,5 +17,4 @@ class Job: NSObject {
     var jobDescription: String?
     var photoURL: String?
     
-    
 }
