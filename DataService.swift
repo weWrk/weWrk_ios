@@ -27,6 +27,7 @@ class DataService {
     }
     
     var fileUrl: String!
+    var mydescription: String!
     
     func SignUp(username: String, email: String, password: String, data: Data) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -39,14 +40,13 @@ class DataService {
             let metadata = FIRStorageMetadata()
             metadata.contentType = "image/jpeg"
             
-            
-            
             self.storageRef.child(filePath).put(data, metadata: metadata, completion: { (metadata, error) in
                 if let error = error {
                     print(error.localizedDescription)
                     return
                 }
                 //let seg = LoginViewController()
+                
                 self.fileUrl = metadata!.downloadURLs![0].absoluteString
                 let changeRequestPhoto = user!.profileChangeRequest()
                 changeRequestPhoto.photoURL = URL(string: self.fileUrl)
@@ -54,9 +54,9 @@ class DataService {
                     if let error = error {
                         print(error.localizedDescription)
                     } else {
-                        let newUser = FIRDatabase.database().reference().child("users").child((user?.uid)!) 
+                        let newUser = FIRDatabase.database().reference().child("users").child((user?.uid)!)
                         newUser.setValue(["displayName" : "\(username)", "email" : "\(email)", "id": "\(user!.uid)",
-                            "profileURL": "\(self.fileUrl!)"])
+                            "profileURL": "\(self.fileUrl!)", "myDescription": "\(self.mydescription)"])
 
                     }
                 })
