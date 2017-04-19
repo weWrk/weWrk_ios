@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		33E6C6871E7EFB2A003F4A50 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */; };
 		33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */; };
+		3B4BA5F41EA457BE00453D39 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F31EA457BE00453D39 /* JobCell.swift */; };
+		3B4BA5F81EA46B5C00453D39 /* imagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */; };
+		3B4BA5FA1EA4721400453D39 /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */; };
+		3B6DDAAB1EA70F020033943B /* ProfileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */; };
+		3B6DDAAD1EA712000033943B /* profilePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DDAAC1EA712000033943B /* profilePost.swift */; };
 		DE1B52FB1E790D6C000F01BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B52FA1E790D6C000F01BA /* AppDelegate.swift */; };
 		DE1B53021E790D6C000F01BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1B53001E790D6C000F01BA /* Main.storyboard */; };
 		DE1B53041E790D6C000F01BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1B53031E790D6C000F01BA /* Assets.xcassets */; };
@@ -48,6 +53,11 @@
 		0FF0DC01750002144E15161F /* Pods-weWrk_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weWrk_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-weWrk_1/Pods-weWrk_1.release.xcconfig"; sourceTree = "<group>"; };
 		33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGradient.swift; sourceTree = "<group>"; };
+		3B4BA5F31EA457BE00453D39 /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
+		3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataService.swift; sourceTree = "<group>"; };
+		3B6DDAAC1EA712000033943B /* profilePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profilePost.swift; sourceTree = "<group>"; };
 		CD7E00698685A9286E9C03EF /* Pods-weWrk_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weWrk_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weWrk_1/Pods-weWrk_1.debug.xcconfig"; sourceTree = "<group>"; };
 		DE1B52F71E790D6C000F01BA /* weWrk_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weWrk_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1B52FA1E790D6C000F01BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = weWrk_1/AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +133,25 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		3B4BA5F51EA4699A00453D39 /* ProfieView */ = {
+			isa = PBXGroup;
+			children = (
+				3B4BA5F61EA469B400453D39 /* Cell */,
+				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
+				3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */,
+			);
+			name = ProfieView;
+			sourceTree = "<group>";
+		};
+		3B4BA5F61EA469B400453D39 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3B4BA5F31EA457BE00453D39 /* JobCell.swift */,
+				3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		DE1B52EE1E790D6B000F01BA = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				FE9868121E99AB5D00DB0C84 /* Job */,
+				3B4BA5F51EA4699A00453D39 /* ProfieView */,
 				DE590A781E92DB7D0096A623 /* Map */,
 				DE2D32C51E8D628B00DB2EFB /* Messenger */,
 				DE2D32C41E8D627000DB2EFB /* Login/SignUp */,
@@ -191,6 +221,8 @@
 				DE2D32C21E8CCAF500DB2EFB /* Users.swift */,
 				DE590A721E90780D0096A623 /* connectionStatus.swift */,
 				DE590A741E918A9D0096A623 /* Message.swift */,
+				3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */,
+				3B6DDAAC1EA712000033943B /* profilePost.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -415,19 +447,24 @@
 				FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */,
 				DE590A751E918A9D0096A623 /* Message.swift in Sources */,
 				FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */,
+				3B6DDAAD1EA712000033943B /* profilePost.swift in Sources */,
 				DE2D32C11E8C3C0600DB2EFB /* ComposeMessageTableViewCell.swift in Sources */,
 				DE2D32BE1E8C39D700DB2EFB /* ComposeMessageViewController.swift in Sources */,
 				DE1C626D1E824DA700FFC6A9 /* DataService.swift in Sources */,
 				DE1B53201E798624000F01BA /* SignupViewController.swift in Sources */,
+				3B4BA5FA1EA4721400453D39 /* InfiniteScrollActivityView.swift in Sources */,
 				DE1C62691E82405800FFC6A9 /* MessageViewController.swift in Sources */,
 				FE4C47A21EAEF6E600993DC7 /* profileCell.swift in Sources */,
 				DE2D32C31E8CCAF500DB2EFB /* Users.swift in Sources */,
 				33E6C6871E7EFB2A003F4A50 /* CategoryCell.swift in Sources */,
 				DE1B52FB1E790D6C000F01BA /* AppDelegate.swift in Sources */,
+				3B4BA5F41EA457BE00453D39 /* JobCell.swift in Sources */,
+				3B6DDAAB1EA70F020033943B /* ProfileDataService.swift in Sources */,
 				DE1B53281E79B269000F01BA /* customField.swift in Sources */,
 				DE1B53261E79AD7D000F01BA /* Helper extensions.swift in Sources */,
 				DE1C626F1E82A7E100FFC6A9 /* ProfileViewController.swift in Sources */,
 				DE590A731E90780D0096A623 /* connectionStatus.swift in Sources */,
+				3B4BA5F81EA46B5C00453D39 /* imagesCollectionViewCell.swift in Sources */,
 				DE590A771E9195A00096A623 /* MessageFeedTableViewCell.swift in Sources */,
 				DEE089DB1E7B7B5E0007814F /* constants.swift in Sources */,
 				DE1C626B1E8240A100FFC6A9 /* MessageFeedViewController.swift in Sources */,
