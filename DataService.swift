@@ -26,9 +26,12 @@ class DataService {
         return FIRStorage.storage().reference()
     }
     
-    
+    let job = Job()
+    let user = Users()
     var fileUrl: String!
     var postFileUrl: String!
+    var jobDate: String!
+   
     
     func SignUp(username: String, email: String, password: String, data: Data) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -59,6 +62,9 @@ class DataService {
                         let newUser = FIRDatabase.database().reference().child("users").child((user?.uid)!) 
                         newUser.setValue(["displayName" : "\(username)", "email" : "\(email)", "id": "\(user!.uid)",
                             "profileURL": "\(self.fileUrl!)"])
+                       
+                        
+                                               
 
                     }
                 })
@@ -77,13 +83,16 @@ class DataService {
          })
     }
 
-    func getData(title: String, company: String, location: String, data: Data, function: String, jobDescription: String)
+    
+    
+    //Gets param values from secondJPVC and posts to FB
+    func getData(title: String, company: String, location: String, data: Data, function: String, jobDescription: String, timestamp: String)
     {
-        // create reference to the database
-        let Post = FIRDatabase.database().reference().child("jobPost").child((currentUser?.uid)!)
+        let Post = BASE_REF.child("jobPost").child((currentUser?.uid)!)
+        
         // keep track of user posts with autoId
         let NewPost = Post.childByAutoId()
-        
+
         // get data and turn it into a string
         let filePath = "jobPostImage/\(currentUser?.uid)"
         let metadata = FIRStorageMetadata()
@@ -96,26 +105,36 @@ class DataService {
                 print(error.localizedDescription)
                 return
             }
-            //let seg = LoginViewController()
+            
             self.postFileUrl = metadata!.downloadURLs![0].absoluteString
             
 
         
         
-        
+        //set dictionary values in a new post with parameters of the function in firebase
         NewPost.setValue(["title" : "\(title)",
                                   "company" : "\(company)",
                                   "location": "\(location)",
                                   "function": "\(function)",
                                   "jobDescription" : "\(jobDescription)",
-                                  "photoURL": "\(self.postFileUrl!)"
+                                  "photoURL": "\(self.postFileUrl!)",
+                                    "timestamp": "\(timestamp)"
                                   ])
-        
+                  
         
         })
-        
+        //send data to job model
+        NewPost.observe(.childAdded, with: { (snapshot) in
+            if let dict = snapshot.value as? [String: Any] {
+                self.job.setValuesForKeys(dict)
+                
+                
+            }
+            
+        })
+
     }
-        
-    
+
 }
+
 
