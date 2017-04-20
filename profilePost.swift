@@ -64,7 +64,6 @@ class profilePost {
         }
         
         
-        
         _postRef = ProfileDataService.ds.REF_PROFILE_POSTS.child(_postKey)
         
     }
