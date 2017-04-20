@@ -37,7 +37,7 @@ class profilePost {
         return _postKey
     }
     
-    init(description: String, imageUrl: String, like: Int) {
+    init(description: String, imageUrl: String, like: Int,  site: String) {
         self._description = description
         self._imageUrl = imageUrl
         self._like = like
