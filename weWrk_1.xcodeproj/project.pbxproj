@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		33E6C6871E7EFB2A003F4A50 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */; };
 		33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */; };
+		3B0946931EA992C2000492E3 /* ProfilePostImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0946921EA992C2000492E3 /* ProfilePostImageURL.swift */; };
+		3B0946951EA9C8F4000492E3 /* getPostImageByPostKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0946941EA9C8F4000492E3 /* getPostImageByPostKey.swift */; };
 		3B4BA5F41EA457BE00453D39 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F31EA457BE00453D39 /* JobCell.swift */; };
 		3B4BA5F81EA46B5C00453D39 /* imagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */; };
 		3B4BA5FA1EA4721400453D39 /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */; };
@@ -48,6 +50,8 @@
 		0FF0DC01750002144E15161F /* Pods-weWrk_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weWrk_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-weWrk_1/Pods-weWrk_1.release.xcconfig"; sourceTree = "<group>"; };
 		33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGradient.swift; sourceTree = "<group>"; };
+		3B0946921EA992C2000492E3 /* ProfilePostImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostImageURL.swift; sourceTree = "<group>"; };
+		3B0946941EA9C8F4000492E3 /* getPostImageByPostKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getPostImageByPostKey.swift; sourceTree = "<group>"; };
 		3B4BA5F31EA457BE00453D39 /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 		3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
@@ -123,12 +127,23 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		3B0946911EA99277000492E3 /* ProfilePost */ = {
+			isa = PBXGroup;
+			children = (
+				3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */,
+				3B6DDAAC1EA712000033943B /* profilePost.swift */,
+				3B0946921EA992C2000492E3 /* ProfilePostImageURL.swift */,
+			);
+			name = ProfilePost;
+			sourceTree = "<group>";
+		};
 		3B4BA5F51EA4699A00453D39 /* ProfieView */ = {
 			isa = PBXGroup;
 			children = (
 				3B4BA5F61EA469B400453D39 /* Cell */,
 				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
 				3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */,
+				3B0946941EA9C8F4000492E3 /* getPostImageByPostKey.swift */,
 			);
 			name = ProfieView;
 			sourceTree = "<group>";
@@ -203,12 +218,11 @@
 		DE1B53121E790F13000F01BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3B0946911EA99277000492E3 /* ProfilePost */,
 				DE1C626C1E824DA700FFC6A9 /* DataService.swift */,
 				DE2D32C21E8CCAF500DB2EFB /* Users.swift */,
 				DE590A721E90780D0096A623 /* connectionStatus.swift */,
 				DE590A741E918A9D0096A623 /* Message.swift */,
-				3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */,
-				3B6DDAAC1EA712000033943B /* profilePost.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -415,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1B53101E790EDC000F01BA /* LoginViewController.swift in Sources */,
+				3B0946951EA9C8F4000492E3 /* getPostImageByPostKey.swift in Sources */,
 				33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */,
 				DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */,
 				DE590A7A1E92DBAB0096A623 /* MapViewController.swift in Sources */,
@@ -435,6 +450,7 @@
 				DE1B53261E79AD7D000F01BA /* Helper extensions.swift in Sources */,
 				DE1C626F1E82A7E100FFC6A9 /* ProfileViewController.swift in Sources */,
 				DE590A731E90780D0096A623 /* connectionStatus.swift in Sources */,
+				3B0946931EA992C2000492E3 /* ProfilePostImageURL.swift in Sources */,
 				3B4BA5F81EA46B5C00453D39 /* imagesCollectionViewCell.swift in Sources */,
 				DE590A771E9195A00096A623 /* MessageFeedTableViewCell.swift in Sources */,
 				DEE089DB1E7B7B5E0007814F /* constants.swift in Sources */,
