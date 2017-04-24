@@ -14,6 +14,7 @@ class Users: NSObject {
     var email: String! 
     var id: String!
     var profileURL: String!
+    var myDescription: String!
    
 }
 

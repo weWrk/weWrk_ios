@@ -1,16 +1,16 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EDE8E17664983B46C88A80CA1951C59193423EAF",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BBAFD10CCD1B895372799346B503A25EB412079C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "61BC24CF59D1A464C9014AA42B81E07E9A63A924" : 9223372036854775807,
-    "EDE8E17664983B46C88A80CA1951C59193423EAF" : 9223372036854775807
+    "BBAFD10CCD1B895372799346B503A25EB412079C" : 9223372036854775807,
+    "61BC24CF59D1A464C9014AA42B81E07E9A63A924" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0B9E0630-165E-485B-9B99-9053C13D62B5",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "61BC24CF59D1A464C9014AA42B81E07E9A63A924" : "weWrk_ios\/weWrk_1\/",
-    "EDE8E17664983B46C88A80CA1951C59193423EAF" : "weWrk_ios\/"
+    "BBAFD10CCD1B895372799346B503A25EB412079C" : "weWrk_ios\/",
+    "61BC24CF59D1A464C9014AA42B81E07E9A63A924" : "weWrk_ios\/weWrk_1\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "weWrk_1",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -24,7 +24,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/weWrk\/weWrk2.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EDE8E17664983B46C88A80CA1951C59193423EAF"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BBAFD10CCD1B895372799346B503A25EB412079C"
     }
   ]
 }
