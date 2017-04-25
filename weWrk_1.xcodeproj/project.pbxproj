@@ -36,6 +36,8 @@
 		DEE089DB1E7B7B5E0007814F /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE089DA1E7B7B5E0007814F /* constants.swift */; };
 		DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE089DC1E7B88870007814F /* feedViewController.swift */; };
 		F35B946F241DE92E9E794B9D /* Pods_weWrk_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044BB32CB00BC46475A25ED0 /* Pods_weWrk_1.framework */; };
+		FE4C47A21EAEF6E600993DC7 /* profileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C47A11EAEF6E600993DC7 /* profileCell.swift */; };
+		FE4C47A41EAEF70A00993DC7 /* jobDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C47A31EAEF70A00993DC7 /* jobDisplayCell.swift */; };
 		FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */; };
 		FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */; };
 		FE9868161E99C5F800DB0C84 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868151E99C5F800DB0C84 /* Job.swift */; };
@@ -76,6 +78,8 @@
 		DEE089D91E7B6A960007814F /* weWrk_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = weWrk_1.entitlements; sourceTree = "<group>"; };
 		DEE089DA1E7B7B5E0007814F /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		DEE089DC1E7B88870007814F /* feedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
+		FE4C47A11EAEF6E600993DC7 /* profileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileCell.swift; sourceTree = "<group>"; };
+		FE4C47A31EAEF70A00993DC7 /* jobDisplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jobDisplayCell.swift; sourceTree = "<group>"; };
 		FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstJobPostVC.swift; sourceTree = "<group>"; };
 		FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondJobPostViewController.swift; sourceTree = "<group>"; };
 		FE9868151E99C5F800DB0C84 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 				DE2D32C41E8D627000DB2EFB /* Login/SignUp */,
 				DEE089DC1E7B88870007814F /* feedViewController.swift */,
 				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
+				FE4C47A11EAEF6E600993DC7 /* profileCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 		FE9868121E99AB5D00DB0C84 /* Job */ = {
 			isa = PBXGroup;
 			children = (
+				FE4C47A31EAEF70A00993DC7 /* jobDisplayCell.swift */,
 				FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */,
 				FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */,
 			);
@@ -401,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1B53101E790EDC000F01BA /* LoginViewController.swift in Sources */,
+				FE4C47A41EAEF70A00993DC7 /* jobDisplayCell.swift in Sources */,
 				FE9868161E99C5F800DB0C84 /* Job.swift in Sources */,
 				33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */,
 				DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */,
@@ -413,6 +420,7 @@
 				DE1C626D1E824DA700FFC6A9 /* DataService.swift in Sources */,
 				DE1B53201E798624000F01BA /* SignupViewController.swift in Sources */,
 				DE1C62691E82405800FFC6A9 /* MessageViewController.swift in Sources */,
+				FE4C47A21EAEF6E600993DC7 /* profileCell.swift in Sources */,
 				DE2D32C31E8CCAF500DB2EFB /* Users.swift in Sources */,
 				33E6C6871E7EFB2A003F4A50 /* CategoryCell.swift in Sources */,
 				DE1B52FB1E790D6C000F01BA /* AppDelegate.swift in Sources */,
