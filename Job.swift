@@ -10,13 +10,14 @@ import Foundation
 
 class Job: NSObject {
     
-    var title: String?
     var company: String?
-    var location: String?
     var function: String?
     var jobDescription: String?
+    var location: String?
     var photoURL: String?
     var timestamp: String?
+    var title: String?
+
     
 
 }

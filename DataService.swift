@@ -126,8 +126,29 @@ class DataService {
         //send data to job model
         NewPost.observe(.childAdded, with: { (snapshot) in
             if let dict = snapshot.value as? [String: Any] {
-                self.job.setValuesForKeys(dict)
+                let job = Job()
+                job.setValuesForKeys(dict)
+                                let titleDictVal = dict["title"]
+                                let locationDictVal = dict["location"]
+                                let companyDictVal = dict["company"]
+                                let functionDictVal = dict["function"]
+                                let descriptionDictVal = dict["jobDescription"]
+                                let imageURLDictVal = dict["photoURL"]
+                                let timeDictVal = dict["timestamp"]
                 
+                
+                
+                                self.job.title = titleDictVal as? String
+                                self.job.location = locationDictVal as? String
+                                self.job.company = companyDictVal as? String
+                                self.job.function = functionDictVal as? String
+                                self.job.jobDescription = descriptionDictVal as? String
+                                self.job.photoURL = imageURLDictVal as? String
+                                self.job.timestamp = timeDictVal as? String
+
+                
+                
+
                 
             }
             
