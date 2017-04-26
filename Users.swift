@@ -14,6 +14,11 @@ class Users: NSObject {
     var email: String! 
     var id: String!
     var profileURL: String!
+    
+    //values for updating user profile
+    var bio: String!
+  //  var skills: String! //or empty string
+    
    
 }
 

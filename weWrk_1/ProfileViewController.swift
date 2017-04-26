@@ -31,7 +31,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate,UITableViewDa
         tableView.dataSource = self
         imageInstance.delegate = self
         statProfView.layer.borderWidth = 2
-        statProfView.layer.borderColor = UIColor(rgb: 0x10A96D ).cgColor
+        statProfView.layer.borderColor = UIColor(rgb: 0xEB5C39 ).cgColor
         
        // fetchUser()
                

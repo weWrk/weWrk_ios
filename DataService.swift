@@ -33,7 +33,7 @@ class DataService {
     var jobDate: String!
    
     
-    func SignUp(username: String, email: String, password: String, data: Data) {
+    func SignUp(username: String, email: String, password: String, data: Data, bio: String) {
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
             if let error = error {
                 print(error.localizedDescription)
@@ -61,7 +61,7 @@ class DataService {
                     } else {
                         let newUser = FIRDatabase.database().reference().child("users").child((user?.uid)!) 
                         newUser.setValue(["displayName" : "\(username)", "email" : "\(email)", "id": "\(user!.uid)",
-                            "profileURL": "\(self.fileUrl!)"])
+                            "profileURL": "\(self.fileUrl!)", "bio" : "\(bio)"])
                        
                         
                                                

@@ -41,6 +41,7 @@
 		FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */; };
 		FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */; };
 		FE9868161E99C5F800DB0C84 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868151E99C5F800DB0C84 /* Job.swift */; };
+		FED045AC1EB148290049D6D4 /* editProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED045AB1EB148290049D6D4 /* editProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstJobPostVC.swift; sourceTree = "<group>"; };
 		FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondJobPostViewController.swift; sourceTree = "<group>"; };
 		FE9868151E99C5F800DB0C84 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		FED045AB1EB148290049D6D4 /* editProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,9 +178,7 @@
 				DE590A781E92DB7D0096A623 /* Map */,
 				DE2D32C51E8D628B00DB2EFB /* Messenger */,
 				DE2D32C41E8D627000DB2EFB /* Login/SignUp */,
-				DEE089DC1E7B88870007814F /* feedViewController.swift */,
-				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
-				FE4C47A11EAEF6E600993DC7 /* profileCell.swift */,
+				FED045AA1EB147EE0049D6D4 /* Profile */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -270,6 +270,17 @@
 				FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */,
 			);
 			name = Job;
+			sourceTree = "<group>";
+		};
+		FED045AA1EB147EE0049D6D4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DEE089DC1E7B88870007814F /* feedViewController.swift */,
+				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
+				FE4C47A11EAEF6E600993DC7 /* profileCell.swift */,
+				FED045AB1EB148290049D6D4 /* editProfile.swift */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +434,7 @@
 				FE4C47A21EAEF6E600993DC7 /* profileCell.swift in Sources */,
 				DE2D32C31E8CCAF500DB2EFB /* Users.swift in Sources */,
 				33E6C6871E7EFB2A003F4A50 /* CategoryCell.swift in Sources */,
+				FED045AC1EB148290049D6D4 /* editProfile.swift in Sources */,
 				DE1B52FB1E790D6C000F01BA /* AppDelegate.swift in Sources */,
 				DE1B53281E79B269000F01BA /* customField.swift in Sources */,
 				DE1B53261E79AD7D000F01BA /* Helper extensions.swift in Sources */,

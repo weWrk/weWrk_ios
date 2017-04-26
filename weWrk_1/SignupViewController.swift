@@ -11,6 +11,8 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var userImage: UIImageView!
     
     var imagePicker: UIImagePickerController!
+    
+    let bio = ""
 
     
     override func viewDidLoad() {
@@ -57,7 +59,7 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
     
         
         //Sign up
-        DataService.dataService.SignUp(username: username, email: email, password: password, data: data)
+        DataService.dataService.SignUp(username: username, email: email, password: password, data: data, bio: bio)
         
     
 
