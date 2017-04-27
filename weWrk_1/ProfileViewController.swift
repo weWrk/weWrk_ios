@@ -3,8 +3,8 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-var imageNum: Int = 5
-var siteImagePosts:[siteImagePost] = []
+//var imageNum: Int = 5
+//var siteImagePosts:[siteImagePost] = []
 
 class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
 
@@ -24,7 +24,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     var loadingMoreView: InfiniteScrollActivityView?
     var storedOffsets = [Int: CGFloat]()
     var PostNum:Int = 0
-
+    var imagePosts:[siteImagePost] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -187,48 +187,54 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             // return posts.count
-        let post = posts[collectionView.tag]
-        let siteID:String = post.postKey
-        print("siteID: \(siteID)")
-        var countNum = 0
-        var imagePosts: [siteImagePost] = []
+        
         
         ProfileDataService.ds.REF_SITE_IMAGE_POSTS.observe(.value,  with: { (snapshot) in
             //     var Num:Int = 0
+            let post = self.posts[collectionView.tag]
+            let siteID:String = post.postKey
+            print("1.0: tag: \(collectionView.tag)")
+            print("1.1: siteID: \(siteID)")
+            var countNum = 0
+            
+            self.imagePosts = []
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
-                    print("SNAP: \(snap)")
+                     print("\n2: SNAP: \(snap)")
                     
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         
+                        
                         let sitePostKey = snap.childSnapshot(forPath:"sitePostKey").value as? String
-                        print("sitePostKey: \(sitePostKey)")
+                            print("3:sitePostKey: \(sitePostKey)")
                         
-                        let imageURL = snap.childSnapshot(forPath:"imageURL").value as? String
+                            //let imageURL = snap.childSnapshot(forPath:"imageURL").value as? String
                         
-                        if sitePostKey == siteID {
-                            countNum = countNum + 1
-                            print("countNum: \(countNum)")
-                            let imagePost = siteImagePost(postKey: key, postData: postDict)
-                            print("imagePost: \(imagePost)")
-                            imagePosts.append(imagePost)
-                        }
+                            if sitePostKey == siteID {
+                                countNum = countNum + 1
+                                print("4:countNum: \(countNum)")
+                                let imagePost = siteImagePost(postKey: key, postData: postDict)
+                                print("5:imagePost: \(imagePost)")
+                                self.imagePosts.append(imagePost)
+                            }
+                            
                     }
                 }
             }
-            print("imagePosts5: \(imagePosts.count)")
-            siteImagePosts=imagePosts
-            print("imagePosts6: \(siteImagePosts.count)")
+            print("6:imagePosts5: \(self.imagePosts.count)\n")
+ //           siteImagePosts=imagePosts
+ //           print("imagePosts6: \(siteImagePosts.count)")
             //                imageNum = imagePosts.count
             //                print("imagePosts6: \(imageNum)")
 
             //       let imagePost:[siteImagePost] = getPostImageByPostKey(IDKey: siteID)
+ //           collectionView.reloadData()
+
         })
-        collectionView.reloadData()
-        print("imagePosts7: \(siteImagePosts.count)")
-        return  siteImagePosts.count
-//
+        print("7:imagePosts7: \(self.imagePosts.count)\n")
+//      return  self.imagePosts.count //Probem, can't get correct return here
+        return 10 //for test
 
     }
     
