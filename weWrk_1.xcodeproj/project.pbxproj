@@ -150,8 +150,8 @@
 		3B4BA5F51EA4699A00453D39 /* ProfieView */ = {
 			isa = PBXGroup;
 			children = (
-				3B4BA5F61EA469B400453D39 /* Cell */,
 				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
+				3B4BA5F61EA469B400453D39 /* Cell */,
 				3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */,
 				3B0946941EA9C8F4000492E3 /* getPostImageByPostKey.swift */,
 			);
@@ -222,7 +222,6 @@
 				DE2D32C51E8D628B00DB2EFB /* Messenger */,
 				DE2D32C41E8D627000DB2EFB /* Login/SignUp */,
 				DEE089DC1E7B88870007814F /* feedViewController.swift */,
-				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
 				FE4C47A11EAEF6E600993DC7 /* profileCell.swift */,
 			);
 			name = ViewControllers;

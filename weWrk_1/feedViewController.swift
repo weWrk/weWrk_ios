@@ -62,9 +62,6 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func fetchJob() {
-       
-        
-        
         DataService.dataService.BASE_REF.child("jobPost").child((DataService.dataService.currentUser?.uid)!).observe(.childAdded, with: { (snapshot) in
            
             if let dict = snapshot.value as? [String: Any] {
@@ -78,7 +75,6 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     self.tableView.reloadData()
                 }
 
-                
                 
             }
         })
