@@ -972,7 +972,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="Back Arrow" backIndicatorTransitionMaskImage="Back Arrow" id="rOO-IM-sxl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Back Arrow" backIndicatorTransitionMaskImage="Back Arrow" id="rOO-IM-sxl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.97807776489999998" green="0.99029391170000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -24,7 +24,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     var loadingMoreView: InfiniteScrollActivityView?
     var storedOffsets = [Int: CGFloat]()
     var PostNum:Int = 0
-    var imagePosts:[siteImagePost] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -183,116 +183,60 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 }
 
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             // return posts.count
-
-        ProfileDataService.ds.REF_SITE_IMAGE_POSTS.observe(.value,  with: { (snapshot) in
-            //     var Num:Int = 0
-            let post = self.posts[collectionView.tag]
+            let post = posts[collectionView.tag]
             let siteID:String = post.postKey
-            print("1.0: tag: \(collectionView.tag)")
-            print("1.1: siteID: \(siteID)")
+            print("siteID: \(siteID)")
             var countNum = 0
-            siteImagePosts = []
-            self.imagePosts = []
-//            var count:[imagePostCount] = []
-            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
-                for snap in snapshot {
-                     print("\n2: SNAP: \(snap)")
-                    
-                    if let postDict = snap.value as? Dictionary<String, AnyObject> {
-                        let key = snap.key
+            var imagePosts: [siteImagePost] = []
+
+            ProfileDataService.ds.REF_SITE_IMAGE_POSTS.observe(.value,  with: { (snapshot) in
+           //     var Num:Int = 0
+                if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                    for snap in snapshot {
+                        print("SNAP: \(snap)")
                         
-                        
-                        let sitePostKey = snap.childSnapshot(forPath:"sitePostKey").value as? String
-                            print("3:sitePostKey: \(sitePostKey)")
-                        
-                        let imageURL = snap.childSnapshot(forPath:"imageURL").value as? String
-                        print("3.1 imagURl: \(imageURL)")
-                        
-                        
+                        if let postDict = snap.value as? Dictionary<String, AnyObject> {
+                            let key = snap.key
+                            
+                            let sitePostKey = snap.childSnapshot(forPath:"sitePostKey").value as? String
+                            print("sitePostKey: \(sitePostKey)")
+                            
+                            let imageURL = snap.childSnapshot(forPath:"imageURL").value as? String
+                            
                             if sitePostKey == siteID {
                                 countNum = countNum + 1
-                                print("4:countNum: \(countNum)")
+                                print("countNum: \(countNum)")
                                 let imagePost = siteImagePost(postKey: key, postData: postDict)
-                                print("5:imagePost: \(imagePost)")
-                                self.imagePosts.append(imagePost)
-                                siteImagePosts.append(imagePost)
+                                print("imagePost: \(imagePost)")
+                                imagePosts.append(imagePost)
                             }
+                        }
                     }
                 }
-            }
-            print("6:imagePosts5: \(siteImagePosts.count)\n")
-            
-            
-            //           siteImagePosts=imagePosts
- //           print("imagePosts6: \(siteImagePosts.count)")
-            //                imageNum = imagePosts.count
-            //                print("imagePosts6: \(imageNum)")
+                print("imagePosts5: \(imagePosts.count)")
+//                self.tableView.reloadData()
+                siteImagePosts = imagePosts
+                print("imagePosts6: \(siteImagePosts.count)")
+//                imageNum = imagePosts.count
+//                print("imagePosts6: \(imageNum)")
 
-            //       let imagePost:[siteImagePost] = getPostImageByPostKey(IDKey: siteID)
- //           collectionView.reloadData()
-//          siteImagePosts = self.imagePosts
-
-        })
-        print("7:imagePosts7: \(siteImagePosts.count)\n")
-
-  //      return siteImagePosts.count   //Probem, can't get correct return here
-        return 10 //for test
+ //       let imagePost:[siteImagePost] = getPostImageByPostKey(IDKey: siteID)
+            })
+        print("imagePosts7: \(siteImagePosts.count)")
+//        return imagePosts.count
+        return 10
 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imagesCollectionViewCell", for: indexPath) as! imagesCollectionViewCell
-        ProfileDataService.ds.REF_SITE_IMAGE_POSTS.observe(.value,  with: { (snapshot) in
-            //     var Num:Int = 0
-            let post = self.posts[collectionView.tag]
-            let siteID:String = post.postKey
-            print("1.0: tag: \(collectionView.tag)")
-            print("1.1: siteID: \(siteID)")
-            var countNum = 0
-            siteImagePosts = []
-            self.imagePosts = []
-//            var count:[imagePostCount] = []
-            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
-                for snap in snapshot {
-                    print("\n2: SNAP: \(snap)")
-                    
-                    if let postDict = snap.value as? Dictionary<String, AnyObject> {
-                        let key = snap.key
-                        
-                        
-                        let sitePostKey = snap.childSnapshot(forPath:"sitePostKey").value as? String
-                        print("3:sitePostKey: \(sitePostKey)")
-                        
-                        let imageURL = snap.childSnapshot(forPath:"imageURL").value as? String
-                        print("3.1 imagURl: \(imageURL)")
-                        
-                        if sitePostKey == siteID {
-                            countNum = countNum + 1
-                            print("4:countNum: \(countNum)")
-//                            let imagePost = siteImagePost(postKey: key, postData: postDict)
- //                           print("5:imagePost: ell\(imagePost)")
-  //                          self.imagePosts.append(imagePost)
-   //                         siteImagePosts.append(imagePost)
-                            
-                            
-                            // Cell.siteImageView.image = UIImage(data: data!)!
-                            
- //                           let siteImagePost = siteImagePosts[indexPath.row]
-                            //       print("siteImage: \(siteImagePost)")
-                            
-                            //        let catPictureURL = URL(string: siteImagePost.imageUrl)
-                            //        let data = try? Data(contentsOf: catPictureURL!)
-                            //        Cell.siteImageView.image = UIImage(data: data!)!
-                        }
-                    }
-                }
-            }
-        })
+        
+        
         
 //        let catPictureURL = URL(string: "https://firebasestorage.googleapis.com/v0/b/wewrk1.appspot.com/o/profileImage%2F3rsFHXFuyQQGPhBP2mourw26YBq1?alt=media&token=18f7a08f-7680-442c-a836-4c922f5f7c1f")!
 //        let data = try? Data(contentsOf: catPictureURL)
@@ -311,8 +255,6 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
     }
 }
-
-
 
 /*func getPostImageByPostKey(IDKey: String) -> [siteImagePost] {
     print("IDkey1: \(IDKey)")
