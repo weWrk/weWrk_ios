@@ -529,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pp7-Oc-ugQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6231" y="227"/>
+            <point key="canvasLocation" x="7849" y="206"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="9xM-1O-Tsn">
@@ -766,7 +766,7 @@
                     <connections>
                         <segue destination="pis-yz-8Bb" kind="relationship" relationship="viewControllers" id="soO-3J-JAk"/>
                         <segue destination="c3V-Lj-Mdu" kind="relationship" relationship="viewControllers" id="BSX-AM-3SD"/>
-                        <segue destination="tvN-yy-EVf" kind="relationship" relationship="viewControllers" id="54k-8g-mFX"/>
+                        <segue destination="Df4-1r-RMA" kind="relationship" relationship="viewControllers" id="ME2-bh-7rx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8FC-dT-gME" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -972,7 +972,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Back Arrow" backIndicatorTransitionMaskImage="Back Arrow" id="rOO-IM-sxl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="Back Arrow" backIndicatorTransitionMaskImage="Back Arrow" id="rOO-IM-sxl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.97807776489999998" green="0.99029391170000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1033,7 +1033,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ou-ur-jVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2246" y="6"/>
+            <point key="canvasLocation" x="3793" y="787"/>
         </scene>
         <!--Profile-->
         <scene sceneID="cmK-ZE-Vcw">
@@ -1044,7 +1044,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5mw-1C-Fzw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="koU-VD-TEe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzZ-Mn-iQu">
@@ -1162,7 +1162,165 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HnB-6I-g96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3398" y="6"/>
+            <point key="canvasLocation" x="4785" y="787"/>
+        </scene>
+        <!--User Profile View Controller-->
+        <scene sceneID="oPS-K8-wAG">
+            <objects>
+                <viewController id="ggs-ey-w7K" customClass="UserProfileViewController" customModule="weWrk_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8s-8s-zDv"/>
+                        <viewControllerLayoutGuide type="bottom" id="AIW-eb-7RS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u2w-ZB-ucY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tS1-DA-ywt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QY9-jr-Gow">
+                                        <rect key="frame" x="0.0" y="8" width="375" height="328"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-Uh-B91" customClass="SpringImageView" customModule="Spring">
+                                                <rect key="frame" x="44" y="91" width="93" height="94"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY5-D5-sh1">
+                                                <rect key="frame" x="177" y="91" width="98" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-Ff-8fX">
+                                                <rect key="frame" x="177" y="120" width="198" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.72546326930020666" green="0.89698751707545199" blue="0.9865950345993042" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvn-ae-s0k">
+                                        <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eFi-QX-5pV">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B3T-V0-4m2">
+                                                    <size key="itemSize" width="178" height="164"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userJobPost" id="WH5-0g-vNO" customClass="userJobPostCollectionViewCell" customModule="weWrk_1" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="178" height="164"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="178" height="164"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAD-yH-z00">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="178" height="122"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpg-ci-HNP">
+                                                                    <rect key="frame" x="8" y="124" width="67" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qs-7w-PJc">
+                                                                    <rect key="frame" x="8" y="143" width="62" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </view>
+                                                        <connections>
+                                                            <outlet property="userJobAddressLabel" destination="8Qs-7w-PJc" id="bmD-Cd-Z29"/>
+                                                            <outlet property="userJobPostImage" destination="UAD-yH-z00" id="ruz-vr-FSE"/>
+                                                            <outlet property="userJobTitleLabel" destination="cpg-ci-HNP" id="Gi9-q8-T7o"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gBX-YV-2kr"/>
+                    <connections>
+                        <outlet property="userDescriptionLabel" destination="TPh-Ff-8fX" id="zsh-ZJ-viz"/>
+                        <outlet property="userImageView" destination="jgv-Uh-B91" id="Ned-AG-s4E"/>
+                        <outlet property="userNameLabel" destination="WY5-D5-sh1" id="Zyt-Nt-3Li"/>
+                        <outlet property="userProfileJobPostCollectionView" destination="eFi-QX-5pV" id="yUE-vb-99m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFQ-Ow-D4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3793" y="6"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8N9-SL-rK1">
+            <objects>
+                <viewController id="Rgh-XD-5La" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SsA-Nc-DFu"/>
+                        <viewControllerLayoutGuide type="bottom" id="BVh-I3-eAu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JaN-yg-QdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVj-B9-pUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5535" y="760"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="DgP-Pp-u0k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Df4-1r-RMA" userLabel="Profile" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="Fill 1-2" id="OQI-qW-HGJ" userLabel="Profile"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="frS-vA-rKe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.32549019610000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.98431372549999996" green="0.32549019610000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ggs-ey-w7K" kind="relationship" relationship="rootViewController" id="Mou-G3-qdB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PP8-iI-JMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2753" y="6"/>
         </scene>
     </scenes>
     <resources>

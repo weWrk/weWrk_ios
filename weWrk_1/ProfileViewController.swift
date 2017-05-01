@@ -26,6 +26,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     var PostNum:Int = 0
     var imagePosts:[siteImagePost] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         profileImage.setRadius()
@@ -311,6 +312,27 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
     }
 }
+
+
+/*func fetchJob() {
+    DataService.dataService.BASE_REF.child("jobPost").child((DataService.dataService.currentUser?.uid)!).observe(.childAdded, with: { (snapshot) in
+        
+        if let dict = snapshot.value as? [String: Any] {
+            //why isn't there a snapshot for childbyautoid?
+            let job = Job()
+            job.setValuesForKeys(dict)
+            self.arrayref.append(job)
+            //  print(self.arrayref)
+            // my array isn't empty, so array is getting appended with job
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
+            
+        }
+    })
+}
+*/
 
 
 

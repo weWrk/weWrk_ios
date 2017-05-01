@@ -21,10 +21,7 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
         fetchJob()
         tableView.delegate = self
         tableView.dataSource = self
-
         
-        
-
         
 }
     
@@ -62,22 +59,29 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func fetchJob() {
-        DataService.dataService.BASE_REF.child("jobPost").child((DataService.dataService.currentUser?.uid)!).observe(.childAdded, with: { (snapshot) in
-           
-            if let dict = snapshot.value as? [String: Any] {
+//DataService.dataService.BASE_REF.child("jobPost").child((DataService.dataService.currentUser?.uid)!).observe(.childAdded, with: { (snapshot) in
+
+    DataService.dataService.BASE_REF.child("jobPost").observe(.childAdded, with: { (snapshot) in
+        
+        if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+            for snap in snapshot {
+                print("SNAP: \(snap)")
+
+                if let dict = snap.value as? [String: Any] {
                 //why isn't there a snapshot for childbyautoid?
-                let job = Job()
-                job.setValuesForKeys(dict)
-                self.arrayref.append(job)
+                    let job = Job()
+                    job.setValuesForKeys(dict)
+                    self.arrayref.append(job)
               //  print(self.arrayref)
              // my array isn't empty, so array is getting appended with job
-                DispatchQueue.main.async {
+                    DispatchQueue.main.async {
                     self.tableView.reloadData()
-                }
-
+                    }
                 
+                }
             }
-        })
+        }
+    })
     }
     
     
