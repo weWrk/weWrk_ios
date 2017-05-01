@@ -1021,7 +1021,7 @@
                         <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="-3"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gbu-h2-cgg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gbu-h2-cgg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.98431372549999996" green="0.32549019610000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -1375,7 +1375,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Df4-1r-RMA" userLabel="Profile" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Me" image="Fill 1-2" id="OQI-qW-HGJ" userLabel="Profile"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="frS-vA-rKe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="frS-vA-rKe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.98431372549999996" green="0.32549019610000002" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
