@@ -149,4 +149,12 @@ class UserProfileViewController: UIViewController, UICollectionViewDataSource, U
         return cell
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! UserJobPostDetailViewController
+        let index = userProfileJobPostCollectionView.indexPath(for: sender as! userJobPostCollectionViewCell)
+        let post = arrayref[(index?.row)!]
+        
+        vc.post = post
+    }
 }

@@ -72,8 +72,7 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     let job = Job()
                     job.setValuesForKeys(dict)
                     self.arrayref.append(job)
-              //  print(self.arrayref)
-             // my array isn't empty, so array is getting appended with job
+            
                     DispatchQueue.main.async {
                     self.tableView.reloadData()
                     }

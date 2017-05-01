@@ -14,6 +14,7 @@
 		3B4BA5F41EA457BE00453D39 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F31EA457BE00453D39 /* JobCell.swift */; };
 		3B4BA5F81EA46B5C00453D39 /* imagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */; };
 		3B4BA5FA1EA4721400453D39 /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */; };
+		3B4C56841EB7D39200D1B703 /* UserJobPostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C56831EB7D39200D1B703 /* UserJobPostDetailViewController.swift */; };
 		3B6DDAAB1EA70F020033943B /* ProfileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */; };
 		3B6DDAAD1EA712000033943B /* profilePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DDAAC1EA712000033943B /* profilePost.swift */; };
 		3B7FB16A1EB6A86B001B1D11 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB1691EB6A86B001B1D11 /* UserProfileViewController.swift */; };
@@ -62,6 +63,7 @@
 		3B4BA5F31EA457BE00453D39 /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 		3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
+		3B4C56831EB7D39200D1B703 /* UserJobPostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserJobPostDetailViewController.swift; sourceTree = "<group>"; };
 		3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataService.swift; sourceTree = "<group>"; };
 		3B6DDAAC1EA712000033943B /* profilePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profilePost.swift; sourceTree = "<group>"; };
 		3B7FB1691EB6A86B001B1D11 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				DE1B53121E790F13000F01BA /* Models */,
 				DE1B53131E790F2E000F01BA /* Delegate */,
 				DE1B53001E790D6C000F01BA /* Main.storyboard */,
+				3B4C56831EB7D39200D1B703 /* UserJobPostDetailViewController.swift */,
 				DE1B53141E7920EA000F01BA /* Assets */,
 				DE1B530E1E790EA0000F01BA /* Plist */,
 				DE1B53251E79AD7D000F01BA /* Helper extensions.swift */,
@@ -482,6 +485,7 @@
 				3B4BA5F41EA457BE00453D39 /* JobCell.swift in Sources */,
 				3B6DDAAB1EA70F020033943B /* ProfileDataService.swift in Sources */,
 				DE1B53281E79B269000F01BA /* customField.swift in Sources */,
+				3B4C56841EB7D39200D1B703 /* UserJobPostDetailViewController.swift in Sources */,
 				DE1B53261E79AD7D000F01BA /* Helper extensions.swift in Sources */,
 				DE1C626F1E82A7E100FFC6A9 /* ProfileViewController.swift in Sources */,
 				DE590A731E90780D0096A623 /* connectionStatus.swift in Sources */,

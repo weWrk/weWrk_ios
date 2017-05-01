@@ -55,10 +55,9 @@ class secondJobPostViewController: UIViewController {
         //setting the timestamp
         let dF = DateFormatter()
         dF.timeZone = NSTimeZone.local
-        dF.dateFormat = "MM/dd/yy" //mm dd yy
-      //dF.timeStyle = .short for exact time
-        dF.timeStyle = .none //ie: 6:59 AM
-        timestampText = dF.dateFormat
+        dF.dateStyle = .short
+        dF.timeStyle = .none
+        timestampText = "\(dF.string(from: date))"
         
         
         
