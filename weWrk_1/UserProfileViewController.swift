@@ -13,6 +13,9 @@ import SwiftKeychainWrapper
 
 class UserProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    
+    
+    @IBOutlet weak var backGroundImageView: UIImageView!
     @IBOutlet weak var userImageView: UIImageView!
     
     @IBOutlet weak var userNameLabel: UILabel!
@@ -41,6 +44,7 @@ class UserProfileViewController: UIViewController, UICollectionViewDataSource, U
             if user.photoURL != nil {
                 if let data = NSData(contentsOf: user.photoURL!) {
                     self.userImageView.image = UIImage.init(data: data as Data)
+                    self.backGroundImageView.image = UIImage.init(data: data as Data)
                 }
                 
                 self.userNameLabel.text = user.displayName
@@ -52,6 +56,17 @@ class UserProfileViewController: UIViewController, UICollectionViewDataSource, U
         connection()
         establishConnection()
         fetchJob()
+        
+        if !UIAccessibilityIsReduceTransparencyEnabled() {
+            self.backGroundImageView.backgroundColor = UIColor.clear
+            
+            let blurEffect = UIBlurEffect(style: .light)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = self.backGroundImageView.bounds
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            
+            self.backGroundImageView.addSubview(blurEffectView)
+        }
 
     }
 
@@ -126,7 +141,7 @@ class UserProfileViewController: UIViewController, UICollectionViewDataSource, U
         let jobArrayRef = self.arrayref[indexPath.row]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userJobPost", for: indexPath) as! userJobPostCollectionViewCell
-        cell.userJobTitleLabel.text = jobArrayRef.title
+        cell.userJobTitleLabel.text = jobArrayRef.function
         cell.userJobAddressLabel.text = jobArrayRef.location
         let imageUrl = jobArrayRef.photoURL
         cell.userJobPostImage.loadImageUsingCacheUrlString(urlString: imageUrl!)
