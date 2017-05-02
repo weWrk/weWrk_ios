@@ -6,17 +6,26 @@
 //  Copyright © 2017 luis castill0. All rights reserved.
 //
 
+
 import UIKit
 
-class CategoryCell: UITableViewCell {
+class HeadCell: UITableViewCell {
     
+    // UI ELEMENTS
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var seeAllLabel: UIButton!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    // PROPERTIES
+    var thisWidth:CGFloat = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        thisWidth = CGFloat(self.frame.width)
+        pageControl.hidesForSinglePage = true
+        
+        
     }
     
     var collectionViewOffset: CGFloat {
@@ -35,5 +44,4 @@ class CategoryCell: UITableViewCell {
         collectionView.setContentOffset(collectionView.contentOffset, animated:false) // Stops collection view if it was scrolling.
         collectionView.reloadData()
     }
-    
 }
