@@ -25,6 +25,7 @@
 		3BBE01601EB82D2300B6A8A0 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE015C1EB82D2300B6A8A0 /* SearchResultsViewController.swift */; };
 		3BBE01621EB82FE900B6A8A0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE01611EB82FE900B6A8A0 /* Post.swift */; };
 		3BBE01641EB8325900B6A8A0 /* HeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE01631EB8325900B6A8A0 /* HeadCell.swift */; };
+		3BBE01661EB83B8100B6A8A0 /* PostFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE01651EB83B8100B6A8A0 /* PostFeedViewController.swift */; };
 		DE1B52FB1E790D6C000F01BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B52FA1E790D6C000F01BA /* AppDelegate.swift */; };
 		DE1B53021E790D6C000F01BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1B53001E790D6C000F01BA /* Main.storyboard */; };
 		DE1B53041E790D6C000F01BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1B53031E790D6C000F01BA /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		3BBE015C1EB82D2300B6A8A0 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		3BBE01611EB82FE900B6A8A0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3BBE01631EB8325900B6A8A0 /* HeadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadCell.swift; sourceTree = "<group>"; };
+		3BBE01651EB83B8100B6A8A0 /* PostFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostFeedViewController.swift; sourceTree = "<group>"; };
 		CD7E00698685A9286E9C03EF /* Pods-weWrk_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weWrk_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weWrk_1/Pods-weWrk_1.debug.xcconfig"; sourceTree = "<group>"; };
 		DE1B52F71E790D6C000F01BA /* weWrk_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weWrk_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1B52FA1E790D6C000F01BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = weWrk_1/AppDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		DE1B53111E790EF9000F01BA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3BBE01651EB83B8100B6A8A0 /* PostFeedViewController.swift */,
 				FE9868121E99AB5D00DB0C84 /* Job */,
 				3B4BA5F51EA4699A00453D39 /* ProfileView */,
 				DE590A781E92DB7D0096A623 /* Map */,
@@ -486,6 +489,7 @@
 				33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */,
 				DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */,
 				DE590A7A1E92DBAB0096A623 /* MapViewController.swift in Sources */,
+				3BBE01661EB83B8100B6A8A0 /* PostFeedViewController.swift in Sources */,
 				FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */,
 				DE590A751E918A9D0096A623 /* Message.swift in Sources */,
 				FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */,

@@ -4,7 +4,7 @@ import UIKit
 import SwiftKeychainWrapper
 import Firebase
 
-class feedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PostfeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
 
