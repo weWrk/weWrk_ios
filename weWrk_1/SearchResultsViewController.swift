@@ -20,7 +20,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         
         tableView.estimatedRowHeight = 105
         tableView.rowHeight = UITableViewAutomaticDimension
-        
+    
         tableView.reloadData()
     }
     
@@ -34,7 +34,7 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     // Search for job posts in a specified map region and populates THIS tableView with the results...
-    func searchPosts(withRegion region: MKCoordinateRegion){
+    func searchPosts(withRegion region: MKCoordinateRegion, salary: Int){
         // TODO: call a method that takes a MKCoordinateRegion and returns an array of posts from the database which have coordinates that fall into the region. Set the posts. Then reloadData()
         
         

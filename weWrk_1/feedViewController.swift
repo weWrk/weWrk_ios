@@ -24,7 +24,7 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.estimatedRowHeight = 105
         
         // Set navigationBar to Gradient
-        navigationController?.navigationBar.setBackgroundImage( #imageLiteral(resourceName: "Mask"), for: .default)
+        navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Mask"), for: .default)
         
         // Create searchController
         searchController = UISearchController(searchResultsController: storyboard?.instantiateViewController(withIdentifier: "searchController"))
@@ -187,12 +187,16 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // When user presses Filter button, present MapViewController, over context...
     @IBAction func didPressFilter(_ sender: Any) {
+        searchController.searchBar.isUserInteractionEnabled = false
         if mapViewController == nil {
             mapViewController = (storyboard?.instantiateViewController(withIdentifier: "mapViewController"))! as! MapViewController
             mapViewController.delegate = self
             mapViewController.modalPresentationStyle = .overCurrentContext
             mapViewController.modalTransitionStyle = .crossDissolve
             self.present(mapViewController, animated: true, completion: nil)
+        }
+        else if self.presentedViewController != nil {
+            self.presentedViewController?.dismiss(animated: true)
         }
         else{
             self.present(mapViewController, animated: true, completion: nil)
@@ -201,15 +205,17 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     /// Handle Filter View Controller dismissal
-    func didSave(settings: MKCoordinateRegion) {
+    func didSave(region: MKCoordinateRegion, salary: Int) {
+        searchController.searchBar.isUserInteractionEnabled = true
         self.presentedViewController?.dismiss(animated: true, completion: {
         weak var searchController = self.storyboard?.instantiateViewController(withIdentifier: "searchController") as? SearchResultsViewController
-        searchController?.searchPosts(withRegion: settings)
+            searchController?.searchPosts(withRegion: region, salary: salary)
         self.show(searchController!, sender: self)
         })
     }
     
     func didCancel(){
+        searchController.searchBar.isUserInteractionEnabled = true
         self.presentedViewController?.dismiss(animated: true)
         
     }
