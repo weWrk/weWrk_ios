@@ -14,8 +14,8 @@ class MessageFeedViewController: UIViewController,UITableViewDelegate,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "Back Arrow")
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "Back Arrow")
+        self.navigationController?.navigationBar.backIndicatorImage = #imageLiteral(resourceName: "Back Arrow-1")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "Back Arrow-1")
         self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Mask"), for: .default)
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         

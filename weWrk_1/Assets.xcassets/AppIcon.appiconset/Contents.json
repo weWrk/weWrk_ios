@@ -31,8 +31,9 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "wrkbook_logos_green_Avenir.png",
       "scale" : "2x"
     },
     {

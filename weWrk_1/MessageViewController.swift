@@ -16,6 +16,7 @@ class MessageViewController: JSQMessagesViewController{
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
