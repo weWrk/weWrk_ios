@@ -16,6 +16,7 @@ class MessageFeedViewController: UIViewController,UITableViewDelegate,UITableVie
 
         self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "Back Arrow")
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "Back Arrow")
+        self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Mask"), for: .default)
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         observeUserMessages()

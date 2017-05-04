@@ -17,6 +17,7 @@ class Job: NSObject {
     var jobDescription: String?
     var photoURL: String?
     var timestamp: String?
+    var category: String?
     
 
 }

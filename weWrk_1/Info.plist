@@ -2,14 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Allow location Usage</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Allow Location</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Access photo Library</string>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -48,6 +40,12 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow location Usage</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow Location</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access photo Library</string>
 	<key>SourceSansPro-Regular.ttf</key>
 	<string></string>
 	<key>SourceSansPro-Semibold.ttf</key>
@@ -87,5 +85,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

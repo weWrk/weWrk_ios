@@ -21,7 +21,7 @@ class firstJobPostVC: UIViewController, UIImagePickerControllerDelegate, UINavig
         imageInstance.delegate = self
         imageView.setRadius()
         
-        
+        self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Mask"), for: .default)
         if let user = DataService.dataService.currentUser {
             if user.photoURL != nil {
                 if let data = NSData(contentsOf: user.photoURL!) {

@@ -68,7 +68,7 @@ class secondJobPostViewController: UIViewController {
       
         //dismissing view after posting
         let viewControllers = self.navigationController!.viewControllers as [UIViewController];
-        self.navigationController?.popToViewController(viewControllers[viewControllers.count - 3], animated: true);
+        self.navigationController?.popToViewController(viewControllers[viewControllers.count - 2], animated: true);
 
    }
     

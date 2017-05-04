@@ -33,6 +33,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 
         tableView.delegate = self
         tableView.dataSource = self
+        self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Mask"), for: .default)
         
         //collectionView.dataSource = self
         //collectionView.delegate = self

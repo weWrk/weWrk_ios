@@ -12,7 +12,6 @@ class PostfeedViewController: UIViewController, UITableViewDelegate, UITableView
     var arrayref = [Job]()
     let job = Job()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         connection()
@@ -24,6 +23,7 @@ class PostfeedViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     @IBAction func filterWasPressed(_ sender: Any) {
+        
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
@@ -83,7 +83,6 @@ class PostfeedViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayref.count
-        
     }
     
     
@@ -101,7 +100,6 @@ class PostfeedViewController: UIViewController, UITableViewDelegate, UITableView
         
         
         return cell
-        
     }
     
     

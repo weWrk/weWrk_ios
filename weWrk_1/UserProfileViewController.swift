@@ -38,7 +38,7 @@ class UserProfileViewController: UIViewController, UICollectionViewDataSource, U
         
         // Access inofromation from Firebase Storage
         //username.text = user.name
-        
+        self.navigationController?.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "Mask"), for: .default)
         
         if let user = DataService.dataService.currentUser {
             if user.photoURL != nil {
