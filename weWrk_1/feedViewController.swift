@@ -1,14 +1,15 @@
 
-
 import UIKit
 import SwiftKeychainWrapper
 import Firebase
+import MapKit
 
-class feedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UICollectionViewDelegate, UICollectionViewDataSource {
+class feedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UICollectionViewDelegate, UICollectionViewDataSource, FilterPresentingViewControllerDelegate {
     
     // UI Elements
     @IBOutlet weak var tableView: UITableView!
     var searchController: UISearchController!
+    var mapViewController: MapViewController!
     
     // Private Properties
     private var categories: [(name: String, value: [Post])]! = [("More notable jobs",[Post(with: "Architect", image: #imageLiteral(resourceName: "night")), Post(with: "site manager", image:#imageLiteral(resourceName: "construction site 1")),Post(with: "operations manager",image: #imageLiteral(resourceName: "company logo 1")), Post(with: "Painter",image: #imageLiteral(resourceName: "contsruction site 2"))]), ("Near you",[Post(with: "site inspector",image: #imageLiteral(resourceName: "site overlooker")),Post(with: "Project Manager",image: #imageLiteral(resourceName: "high-line-construction-1-1")),Post(with: "Constuction carpenter",image: #imageLiteral(resourceName: "highway construction site 1")),Post(with: "Construction Superintendent", image:#imageLiteral(resourceName: "frontline"))]), ("Explore jobs...",[Post(with: "Construction Claims Manager",image: #imageLiteral(resourceName: "company logo 2")), Post(with: "Concrete Skilled Labor", image:#imageLiteral(resourceName: "construction site 3")),Post(with: "General Laborer",image: #imageLiteral(resourceName: "Improve-Construction-Site"))])] // Init sample data
@@ -42,6 +43,7 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Attach searchController's searchbar to navigationBar
         navigationItem.titleView = searchController.searchBar
         
+        // Set presentation styles to control modal presentations
         definesPresentationContext = true
         
         // TODO: get data from firebase and populate the categories table with objects.
@@ -183,6 +185,35 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return CGSize(width: tableViewCell.frame.width, height: tableViewCell.frame.height)
     }
     
+    // When user presses Filter button, present MapViewController, over context...
+    @IBAction func didPressFilter(_ sender: Any) {
+        if mapViewController == nil {
+            mapViewController = (storyboard?.instantiateViewController(withIdentifier: "mapViewController"))! as! MapViewController
+            mapViewController.delegate = self
+            mapViewController.modalPresentationStyle = .overCurrentContext
+            mapViewController.modalTransitionStyle = .crossDissolve
+            self.present(mapViewController, animated: true, completion: nil)
+        }
+        else{
+            self.present(mapViewController, animated: true, completion: nil)
+        }
+    }
+    
+    
+    /// Handle Filter View Controller dismissal
+    func didSave(settings: MKCoordinateRegion) {
+        self.presentedViewController?.dismiss(animated: true, completion: {
+        weak var searchController = self.storyboard?.instantiateViewController(withIdentifier: "searchController") as? SearchResultsViewController
+        searchController?.searchPosts(withRegion: settings)
+        self.show(searchController!, sender: self)
+        })
+    }
+    
+    func didCancel(){
+        self.presentedViewController?.dismiss(animated: true)
+        
+    }
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -191,8 +222,6 @@ class feedViewController: UIViewController, UITableViewDelegate, UITableViewData
             //let vc = segue.destination as! ShowMoreViewController
             // vc.category = categories[buttonPressed.tag]
         }
-        
-        
         
     }
 }

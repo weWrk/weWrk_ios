@@ -1,6 +1,6 @@
 
-
 import UIKit
+import MapKit
 
 // Main ViewController
 class SearchResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -31,6 +31,14 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
         else {
             return 0
         }
+    }
+    
+    // Search for job posts in a specified map region and populates THIS tableView with the results...
+    func searchPosts(withRegion region: MKCoordinateRegion){
+        // TODO: call a method that takes a MKCoordinateRegion and returns an array of posts from the database which have coordinates that fall into the region. Set the posts. Then reloadData()
+        
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

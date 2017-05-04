@@ -148,12 +148,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		33E6C6851E7EFAE6003F4A50 /* Views */ = {
+		2F0E4B831EBA943900534DAA /* FeedPage */ = {
 			isa = PBXGroup;
 			children = (
-				3BBE01631EB8325900B6A8A0 /* HeadCell.swift */,
-				33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */,
+				2F0E4B841EBA958800534DAA /* Views */,
+				DEE089DC1E7B88870007814F /* feedViewController.swift */,
+				3BBE01591EB82D2300B6A8A0 /* FilterTableViewController.swift */,
+				3BBE015C1EB82D2300B6A8A0 /* SearchResultsViewController.swift */,
+			);
+			name = FeedPage;
+			sourceTree = "<group>";
+		};
+		2F0E4B841EBA958800534DAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BBE015A1EB82D2300B6A8A0 /* PostCollectionViewCell.swift */,
+				FE4C47A11EAEF6E600993DC7 /* profileCell.swift */,
 				33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */,
+				33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */,
+				3BBE015B1EB82D2300B6A8A0 /* SearchCell.swift */,
+				3BBE01631EB8325900B6A8A0 /* HeadCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -212,7 +226,6 @@
 		DE1B52F91E790D6C000F01BA /* weWrk_1 */ = {
 			isa = PBXGroup;
 			children = (
-				33E6C6851E7EFAE6003F4A50 /* Views */,
 				DEE089D91E7B6A960007814F /* weWrk_1.entitlements */,
 				DE1B53111E790EF9000F01BA /* ViewControllers */,
 				DE1B53121E790F13000F01BA /* Models */,
@@ -246,12 +259,7 @@
 				DE590A781E92DB7D0096A623 /* Map */,
 				DE2D32C51E8D628B00DB2EFB /* Messenger */,
 				DE2D32C41E8D627000DB2EFB /* Login/SignUp */,
-				DEE089DC1E7B88870007814F /* feedViewController.swift */,
-				FE4C47A11EAEF6E600993DC7 /* profileCell.swift */,
-				3BBE01591EB82D2300B6A8A0 /* FilterTableViewController.swift */,
-				3BBE015A1EB82D2300B6A8A0 /* PostCollectionViewCell.swift */,
-				3BBE015B1EB82D2300B6A8A0 /* SearchCell.swift */,
-				3BBE015C1EB82D2300B6A8A0 /* SearchResultsViewController.swift */,
+				2F0E4B831EBA943900534DAA /* FeedPage */,
 				3B4C56831EB7D39200D1B703 /* UserJobPostDetailViewController.swift */,
 			);
 			name = ViewControllers;
