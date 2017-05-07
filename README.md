@@ -1,3 +1,7 @@
+<p align="center">
+	<a href="https://github.com/weWrk/weWrk_ios/blob/master"><img src="/wrkbook_logos_green_Avenir_logo.png" alt="weWrk" width="300" height="300"/></a><br /><br />
+</p>
+<br />
 # Group Project - weWrk
 
 weWrk is a work related social networking platform for construction workers and companies, using the [Firebase](https://firebase.google.com) API and infrastructure.
