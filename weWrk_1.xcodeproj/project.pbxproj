@@ -9,11 +9,23 @@
 /* Begin PBXBuildFile section */
 		33E6C6871E7EFB2A003F4A50 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */; };
 		33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */; };
+		3B0946931EA992C2000492E3 /* ProfilePostImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0946921EA992C2000492E3 /* ProfilePostImageURL.swift */; };
+		3B0946951EA9C8F4000492E3 /* getPostImageByPostKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0946941EA9C8F4000492E3 /* getPostImageByPostKey.swift */; };
 		3B4BA5F41EA457BE00453D39 /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F31EA457BE00453D39 /* JobCell.swift */; };
 		3B4BA5F81EA46B5C00453D39 /* imagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */; };
 		3B4BA5FA1EA4721400453D39 /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */; };
+		3B4C56841EB7D39200D1B703 /* UserJobPostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C56831EB7D39200D1B703 /* UserJobPostDetailViewController.swift */; };
 		3B6DDAAB1EA70F020033943B /* ProfileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */; };
 		3B6DDAAD1EA712000033943B /* profilePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6DDAAC1EA712000033943B /* profilePost.swift */; };
+		3B7FB16A1EB6A86B001B1D11 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB1691EB6A86B001B1D11 /* UserProfileViewController.swift */; };
+		3B7FB16C1EB6AAC5001B1D11 /* userJobPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB16B1EB6AAC5001B1D11 /* userJobPostCollectionViewCell.swift */; };
+		3BBE015D1EB82D2300B6A8A0 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE01591EB82D2300B6A8A0 /* FilterTableViewController.swift */; };
+		3BBE015E1EB82D2300B6A8A0 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE015A1EB82D2300B6A8A0 /* PostCollectionViewCell.swift */; };
+		3BBE015F1EB82D2300B6A8A0 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE015B1EB82D2300B6A8A0 /* SearchCell.swift */; };
+		3BBE01601EB82D2300B6A8A0 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE015C1EB82D2300B6A8A0 /* SearchResultsViewController.swift */; };
+		3BBE01621EB82FE900B6A8A0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE01611EB82FE900B6A8A0 /* Post.swift */; };
+		3BBE01641EB8325900B6A8A0 /* HeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE01631EB8325900B6A8A0 /* HeadCell.swift */; };
+		3BBE01661EB83B8100B6A8A0 /* PostFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE01651EB83B8100B6A8A0 /* PostFeedViewController.swift */; };
 		DE1B52FB1E790D6C000F01BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1B52FA1E790D6C000F01BA /* AppDelegate.swift */; };
 		DE1B53021E790D6C000F01BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1B53001E790D6C000F01BA /* Main.storyboard */; };
 		DE1B53041E790D6C000F01BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1B53031E790D6C000F01BA /* Assets.xcassets */; };
@@ -41,6 +53,11 @@
 		DEE089DB1E7B7B5E0007814F /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE089DA1E7B7B5E0007814F /* constants.swift */; };
 		DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE089DC1E7B88870007814F /* feedViewController.swift */; };
 		F35B946F241DE92E9E794B9D /* Pods_weWrk_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044BB32CB00BC46475A25ED0 /* Pods_weWrk_1.framework */; };
+		FE4C47A21EAEF6E600993DC7 /* profileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C47A11EAEF6E600993DC7 /* profileCell.swift */; };
+		FE4C47A41EAEF70A00993DC7 /* jobDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C47A31EAEF70A00993DC7 /* jobDisplayCell.swift */; };
+		FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */; };
+		FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */; };
+		FE9868161E99C5F800DB0C84 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9868151E99C5F800DB0C84 /* Job.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,11 +65,23 @@
 		0FF0DC01750002144E15161F /* Pods-weWrk_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weWrk_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-weWrk_1/Pods-weWrk_1.release.xcconfig"; sourceTree = "<group>"; };
 		33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGradient.swift; sourceTree = "<group>"; };
+		3B0946921EA992C2000492E3 /* ProfilePostImageURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostImageURL.swift; sourceTree = "<group>"; };
+		3B0946941EA9C8F4000492E3 /* getPostImageByPostKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getPostImageByPostKey.swift; sourceTree = "<group>"; };
 		3B4BA5F31EA457BE00453D39 /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 		3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
+		3B4C56831EB7D39200D1B703 /* UserJobPostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserJobPostDetailViewController.swift; sourceTree = "<group>"; };
 		3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataService.swift; sourceTree = "<group>"; };
 		3B6DDAAC1EA712000033943B /* profilePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profilePost.swift; sourceTree = "<group>"; };
+		3B7FB1691EB6A86B001B1D11 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		3B7FB16B1EB6AAC5001B1D11 /* userJobPostCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userJobPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BBE01591EB82D2300B6A8A0 /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
+		3BBE015A1EB82D2300B6A8A0 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BBE015B1EB82D2300B6A8A0 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		3BBE015C1EB82D2300B6A8A0 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		3BBE01611EB82FE900B6A8A0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3BBE01631EB8325900B6A8A0 /* HeadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadCell.swift; sourceTree = "<group>"; };
+		3BBE01651EB83B8100B6A8A0 /* PostFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostFeedViewController.swift; sourceTree = "<group>"; };
 		CD7E00698685A9286E9C03EF /* Pods-weWrk_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weWrk_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weWrk_1/Pods-weWrk_1.debug.xcconfig"; sourceTree = "<group>"; };
 		DE1B52F71E790D6C000F01BA /* weWrk_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weWrk_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1B52FA1E790D6C000F01BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = weWrk_1/AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +112,11 @@
 		DEE089D91E7B6A960007814F /* weWrk_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = weWrk_1.entitlements; sourceTree = "<group>"; };
 		DEE089DA1E7B7B5E0007814F /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		DEE089DC1E7B88870007814F /* feedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
+		FE4C47A11EAEF6E600993DC7 /* profileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileCell.swift; sourceTree = "<group>"; };
+		FE4C47A31EAEF70A00993DC7 /* jobDisplayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jobDisplayCell.swift; sourceTree = "<group>"; };
+		FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstJobPostVC.swift; sourceTree = "<group>"; };
+		FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondJobPostViewController.swift; sourceTree = "<group>"; };
+		FE9868151E99C5F800DB0C84 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,30 +148,59 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		33E6C6851E7EFAE6003F4A50 /* Views */ = {
+		2F0E4B831EBA943900534DAA /* FeedPage */ = {
 			isa = PBXGroup;
 			children = (
-				33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */,
+				2F0E4B841EBA958800534DAA /* Views */,
+				DEE089DC1E7B88870007814F /* feedViewController.swift */,
+				3BBE01591EB82D2300B6A8A0 /* FilterTableViewController.swift */,
+				3BBE015C1EB82D2300B6A8A0 /* SearchResultsViewController.swift */,
+			);
+			name = FeedPage;
+			sourceTree = "<group>";
+		};
+		2F0E4B841EBA958800534DAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BBE015A1EB82D2300B6A8A0 /* PostCollectionViewCell.swift */,
+				FE4C47A11EAEF6E600993DC7 /* profileCell.swift */,
 				33E6C6881E7EFC91003F4A50 /* SwiftyGradient.swift */,
+				33E6C6861E7EFB2A003F4A50 /* CategoryCell.swift */,
+				3BBE015B1EB82D2300B6A8A0 /* SearchCell.swift */,
+				3BBE01631EB8325900B6A8A0 /* HeadCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		3B4BA5F51EA4699A00453D39 /* ProfieView */ = {
+		3B0946911EA99277000492E3 /* ProfilePost */ = {
 			isa = PBXGroup;
 			children = (
-				3B4BA5F61EA469B400453D39 /* Cell */,
-				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
-				3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */,
+				3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */,
+				3B6DDAAC1EA712000033943B /* profilePost.swift */,
+				3B0946921EA992C2000492E3 /* ProfilePostImageURL.swift */,
 			);
-			name = ProfieView;
+			name = ProfilePost;
+			sourceTree = "<group>";
+		};
+		3B4BA5F51EA4699A00453D39 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				DE1C626E1E82A7E100FFC6A9 /* ProfileViewController.swift */,
+				3B7FB1691EB6A86B001B1D11 /* UserProfileViewController.swift */,
+				3B4BA5F61EA469B400453D39 /* Cell */,
+				3B4BA5F91EA4721400453D39 /* InfiniteScrollActivityView.swift */,
+				3B0946941EA9C8F4000492E3 /* getPostImageByPostKey.swift */,
+			);
+			name = ProfileView;
 			sourceTree = "<group>";
 		};
 		3B4BA5F61EA469B400453D39 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3BBE01611EB82FE900B6A8A0 /* Post.swift */,
 				3B4BA5F31EA457BE00453D39 /* JobCell.swift */,
 				3B4BA5F71EA46B5C00453D39 /* imagesCollectionViewCell.swift */,
+				3B7FB16B1EB6AAC5001B1D11 /* userJobPostCollectionViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -163,7 +226,6 @@
 		DE1B52F91E790D6C000F01BA /* weWrk_1 */ = {
 			isa = PBXGroup;
 			children = (
-				33E6C6851E7EFAE6003F4A50 /* Views */,
 				DEE089D91E7B6A960007814F /* weWrk_1.entitlements */,
 				DE1B53111E790EF9000F01BA /* ViewControllers */,
 				DE1B53121E790F13000F01BA /* Models */,
@@ -191,11 +253,14 @@
 		DE1B53111E790EF9000F01BA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3B4BA5F51EA4699A00453D39 /* ProfieView */,
+				3BBE01651EB83B8100B6A8A0 /* PostFeedViewController.swift */,
+				FE9868121E99AB5D00DB0C84 /* Job */,
+				3B4BA5F51EA4699A00453D39 /* ProfileView */,
 				DE590A781E92DB7D0096A623 /* Map */,
 				DE2D32C51E8D628B00DB2EFB /* Messenger */,
 				DE2D32C41E8D627000DB2EFB /* Login/SignUp */,
-				DEE089DC1E7B88870007814F /* feedViewController.swift */,
+				2F0E4B831EBA943900534DAA /* FeedPage */,
+				3B4C56831EB7D39200D1B703 /* UserJobPostDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -203,12 +268,12 @@
 		DE1B53121E790F13000F01BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3B0946911EA99277000492E3 /* ProfilePost */,
 				DE1C626C1E824DA700FFC6A9 /* DataService.swift */,
+				FE9868151E99C5F800DB0C84 /* Job.swift */,
 				DE2D32C21E8CCAF500DB2EFB /* Users.swift */,
 				DE590A721E90780D0096A623 /* connectionStatus.swift */,
 				DE590A741E918A9D0096A623 /* Message.swift */,
-				3B6DDAAA1EA70F020033943B /* ProfileDataService.swift */,
-				3B6DDAAC1EA712000033943B /* profilePost.swift */,
 			);
 			name = Models;
 			path = ..;
@@ -280,6 +345,16 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
+		FE9868121E99AB5D00DB0C84 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				FE4C47A31EAEF70A00993DC7 /* jobDisplayCell.swift */,
+				FE9868101E99AB5300DB0C84 /* firstJobPostVC.swift */,
+				FE9868131E99AB7F00DB0C84 /* secondJobPostViewController.swift */,
+			);
+			name = Job;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,7 +390,7 @@
 				TargetAttributes = {
 					DE1B52F61E790D6B000F01BA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Y9R5463FG5;
+						DevelopmentTeam = 936NAP953U;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -374,7 +449,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7FF8097D44DE758896550C6A /* [CP] Embed Pods Frameworks */ = {
@@ -415,10 +490,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1B53101E790EDC000F01BA /* LoginViewController.swift in Sources */,
+				3BBE01601EB82D2300B6A8A0 /* SearchResultsViewController.swift in Sources */,
+				FE4C47A41EAEF70A00993DC7 /* jobDisplayCell.swift in Sources */,
+				FE9868161E99C5F800DB0C84 /* Job.swift in Sources */,
+				3B0946951EA9C8F4000492E3 /* getPostImageByPostKey.swift in Sources */,
 				33E6C6891E7EFC91003F4A50 /* SwiftyGradient.swift in Sources */,
 				DEE089DD1E7B88870007814F /* feedViewController.swift in Sources */,
 				DE590A7A1E92DBAB0096A623 /* MapViewController.swift in Sources */,
+				3BBE01661EB83B8100B6A8A0 /* PostFeedViewController.swift in Sources */,
+				FE9868141E99AB7F00DB0C84 /* secondJobPostViewController.swift in Sources */,
 				DE590A751E918A9D0096A623 /* Message.swift in Sources */,
+				FE9868111E99AB5300DB0C84 /* firstJobPostVC.swift in Sources */,
 				3B6DDAAD1EA712000033943B /* profilePost.swift in Sources */,
 				DE2D32C11E8C3C0600DB2EFB /* ComposeMessageTableViewCell.swift in Sources */,
 				DE2D32BE1E8C39D700DB2EFB /* ComposeMessageViewController.swift in Sources */,
@@ -426,19 +508,29 @@
 				DE1B53201E798624000F01BA /* SignupViewController.swift in Sources */,
 				3B4BA5FA1EA4721400453D39 /* InfiniteScrollActivityView.swift in Sources */,
 				DE1C62691E82405800FFC6A9 /* MessageViewController.swift in Sources */,
+				3B7FB16A1EB6A86B001B1D11 /* UserProfileViewController.swift in Sources */,
+				3BBE01621EB82FE900B6A8A0 /* Post.swift in Sources */,
+				FE4C47A21EAEF6E600993DC7 /* profileCell.swift in Sources */,
+				3BBE015D1EB82D2300B6A8A0 /* FilterTableViewController.swift in Sources */,
 				DE2D32C31E8CCAF500DB2EFB /* Users.swift in Sources */,
 				33E6C6871E7EFB2A003F4A50 /* CategoryCell.swift in Sources */,
 				DE1B52FB1E790D6C000F01BA /* AppDelegate.swift in Sources */,
+				3BBE015F1EB82D2300B6A8A0 /* SearchCell.swift in Sources */,
 				3B4BA5F41EA457BE00453D39 /* JobCell.swift in Sources */,
 				3B6DDAAB1EA70F020033943B /* ProfileDataService.swift in Sources */,
 				DE1B53281E79B269000F01BA /* customField.swift in Sources */,
+				3B4C56841EB7D39200D1B703 /* UserJobPostDetailViewController.swift in Sources */,
 				DE1B53261E79AD7D000F01BA /* Helper extensions.swift in Sources */,
 				DE1C626F1E82A7E100FFC6A9 /* ProfileViewController.swift in Sources */,
 				DE590A731E90780D0096A623 /* connectionStatus.swift in Sources */,
+				3B0946931EA992C2000492E3 /* ProfilePostImageURL.swift in Sources */,
 				3B4BA5F81EA46B5C00453D39 /* imagesCollectionViewCell.swift in Sources */,
+				3BBE015E1EB82D2300B6A8A0 /* PostCollectionViewCell.swift in Sources */,
 				DE590A771E9195A00096A623 /* MessageFeedTableViewCell.swift in Sources */,
+				3BBE01641EB8325900B6A8A0 /* HeadCell.swift in Sources */,
 				DEE089DB1E7B7B5E0007814F /* constants.swift in Sources */,
 				DE1C626B1E8240A100FFC6A9 /* MessageFeedViewController.swift in Sources */,
+				3B7FB16C1EB6AAC5001B1D11 /* userJobPostCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,11 +656,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = weWrk_1/weWrk_1.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y9R5463FG5;
+				DEVELOPMENT_TEAM = 936NAP953U;
 				INFOPLIST_FILE = weWrk_1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.weWrk-1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.wewrk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -580,11 +674,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = weWrk_1/weWrk_1.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y9R5463FG5;
+				DEVELOPMENT_TEAM = 936NAP953U;
 				INFOPLIST_FILE = weWrk_1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.weWrk-1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.wewrk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
